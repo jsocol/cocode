@@ -1,0 +1,10 @@
+<?php
+// Currently only supports MySQL
+// $db_type = 'mysql';
+$db_host = '';
+$db_user = '';
+$db_pass = '';
+$db_name = '';
+$db_port = '3306';
+$db_sock = NULL;
+

@@ -1,0 +1,32 @@
+/* Cocode - Fixes for Internet Explorer */
+
+div#header div#user-status ul {
+	display: block;
+	margin: 0;
+}
+
+div#header div#user-status ul li {
+	display: inline;
+}
+
+div#snippet ul#snippet-views {
+	display: block;
+	margin: 0;
+}
+
+div#snippet ul#snippet-views li {
+	display: inline;
+}
+
+div#snippet span#snippet-actions ul {
+	display: block;
+	margin: 0;
+}
+
+div#snippet span#snippet-actions ul li {
+	display: inline;
+}
+
+#geshi-line ol {
+	list-style-position: inside;
+}

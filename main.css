@@ -1,0 +1,308 @@
+/* STYLES!!!! */
+
+body {
+	font-size: 14pt;
+	margin: 0;
+	padding: 0;
+	background-color: #def;
+	color: #333;
+}
+
+#header,
+#snippet,
+#content,
+#comments,
+#history,
+#footer {
+	width: 800px;
+	margin: 0 auto;
+	position: relative;
+}
+
+h1,
+h2,
+#header,
+ul {
+	font-family: Geneva, Verdana, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+}
+
+a:link,
+a:active,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+
+span.cocode {
+	font-weight: bold;
+}
+
+span.line-number {
+	background-color: #eef;
+	cursor: default;
+}
+
+
+ol li.highlight {
+	background-color: #ded;
+}
+
+ol li:hover {
+	background-color: #eed;
+}
+
+div#header span#sitename {
+	font-weight: bold;
+	display: block;
+}
+
+div#header span#sitename a {
+	color: #333;
+	text-decoration: none;
+}
+
+div#header span#by-cocode {
+	display: block;
+	font-size: 10pt;
+	text-indent: 3em;
+}
+
+div#header div#user-status {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 10pt;
+}
+
+div#header div#user-status ul {
+	display: inline;
+	list-style: none;
+}
+
+div#header div#user-status ul li {
+	display: inline-block;
+	margin: 0 1pt;
+	padding: 3pt;
+	width: 5em;
+	background-color: #fff;
+	text-align: center;
+}
+
+div#footer {
+	clear:both;
+}
+
+div#snippet ul#snippet-views {
+	text-align: right;
+	margin: 0;
+	padding: 0;
+	font-size: 12pt;
+	list-style: none;
+}
+
+div#snippet ul#snippet-views li {
+	display: inline-block;
+	margin: 0 1pt;
+	padding: 3pt;
+	width: 5em;
+	background-color: #fff;
+	text-align: center;
+}
+
+li.current {
+	font-weight: bold;
+}
+
+div#snippet ul#snippet-views li.disabled {
+	background-color: #e9e9e9;
+	color: #999;
+}
+
+div#snippet div.view {
+	background-color: #fff;
+	font-size: 10pt;
+	margin: 0;
+	padding: 0;
+	height: 30em;
+	overflow: auto;
+	position: relative;
+}
+
+div#snippet div.disabled {
+	display: none;
+}
+
+div#snippet pre {
+	margin: 0;
+	padding: 2pt;
+}
+
+div#snippet pre ol {
+	margin: 0;
+}
+
+div#snippet div#snippet-revise {
+	overflow: hidden;
+}
+
+
+
+div#snippet textarea {
+	height: 24em;
+	width: 99.5%;
+}
+
+
+
+div#snippet div#snippet-info {
+	position: relative;
+}
+
+div#snippet span#snippet-actions {
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+div#snippet span#snippet-actions ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: inline;
+	font-size: 12pt;
+}
+
+div#snippet span#snippet-actions ul li {
+	display: inline-block;
+	margin: 0 1pt;
+	padding: 3pt;
+	width: 5em;
+	background-color: #fff;
+	text-align: center;
+}
+
+div#snippet span.diff-lines {
+	color: #880088;
+}
+
+div#snippet span.diff-subtract {
+	color: #cc0000;
+}
+
+div#snippet span.diff-add {
+	color: #008800;
+}
+
+div#comments div.comment {
+	position: relative;
+	background-color: #fff;
+	margin-bottom: 12pt;
+	padding: 6pt 3pt;
+}
+
+div#comments div div.toggle {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 16pt;
+	width: 16pt;
+	background-color: #f00;
+}
+
+div#comments div.collapsed div.toggle {
+	background-color: #00f;
+}
+
+div#comments div span.comment-collapsed {
+	display: none;
+}
+
+div#comments div.collapsed span.comment-collapsed {
+	display: block;
+}
+
+div#comments div.collapsed span.comment-collapsed span.comment-author {
+	color: #999;
+	font-size: 80%;
+	font-style: italic;
+}
+
+div#comments div.collapsed span.comment-expanded {
+	display: none;
+}
+
+div#comments div span.comment-expanded span.comment-author {
+	display: block;
+	font-size: 90%;
+}
+
+div#comments div#comment-form textarea {
+	display: block;
+	height: 12em;
+	width: 32em;
+}
+
+div#history ul {
+	background-color: #fff;
+}
+
+div#recent-snippets,
+div#recent-comments {
+	width: 49%;
+	padding-right: 0.5%;
+	float: left;
+}
+
+form.user-preferences label {
+	display: block;
+	position: relative;
+	clear: both;
+	width: 60%;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+form.user-preferences label input {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50%;
+}
+
+form.user-preferences span.note {
+	display: block;
+	clear: both;
+	font-style: italic;
+	font-size: 80%;
+}
+
+form.user-preferences textarea {
+	display: block;
+	width: 100%;
+	height: 10em;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+div.errors {
+	border: 2px solid #c00;
+	background-color: #ecc;
+	padding: 5px;
+	margin: 0 0 10px 0;
+	font-size: 90%;
+}
+
+div.errors p {
+	padding: 0 0 0 10px;
+	margin: 0;
+	font-weight: bold;
+	font-style: italic;
+}
+
+div.errors ul {
+	list-style: none;
+}
